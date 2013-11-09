@@ -18,7 +18,7 @@ class ClassifiedAdsControllerTest < ActionController::TestCase
 
   test "should create classified_ad" do
     assert_difference('ClassifiedAd.count') do
-      post :create, classified_ad: { bath: @classified_ad.bath, bed: @classified_ad.bed, description: @classified_ad.description, end_date: @classified_ad.end_date, location: @classified_ad.location, rent: @classified_ad.rent, title: @classified_ad.title }
+      post :create, classified_ad: { bath: @classified_ad.bath, bed: @classified_ad.bed, description: @classified_ad.description, end_date: @classified_ad.end_date, location: @classified_ad.location, rent: @classified_ad.rent, title: @classified_ad.title, user_id: @classified_ad.user_id }
     end
 
     assert_redirected_to classified_ad_path(assigns(:classified_ad))
@@ -35,7 +35,7 @@ class ClassifiedAdsControllerTest < ActionController::TestCase
   end
 
   test "should update classified_ad" do
-    patch :update, id: @classified_ad, classified_ad: { bath: @classified_ad.bath, bed: @classified_ad.bed, description: @classified_ad.description, end_date: @classified_ad.end_date, location: @classified_ad.location, rent: @classified_ad.rent, title: @classified_ad.title }
+    patch :update, id: @classified_ad, classified_ad: { bath: @classified_ad.bath, bed: @classified_ad.bed, description: @classified_ad.description, end_date: @classified_ad.end_date, location: @classified_ad.location, rent: @classified_ad.rent, title: @classified_ad.title, user_id: @classified_ad.user_id }
     assert_redirected_to classified_ad_path(assigns(:classified_ad))
   end
 

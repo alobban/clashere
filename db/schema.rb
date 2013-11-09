@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109084725) do
+ActiveRecord::Schema.define(version: 20131109091012) do
 
   create_table "classified_ads", force: true do |t|
     t.string   "title"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20131109084725) do
     t.integer  "bed"
     t.integer  "bath"
     t.date     "end_date"
+    t.string   "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -35,6 +36,16 @@ ActiveRecord::Schema.define(version: 20131109084725) do
     t.datetime "post_date"
     t.datetime "end_date"
     t.decimal  "rent",        precision: 8, scale: 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

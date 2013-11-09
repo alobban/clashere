@@ -8,6 +8,7 @@ one:
   bed: 1
   bath: 1
   end_date: 2013-11-09
+  user_id: MyString
 
 two:
   title: MyString
@@ -17,3 +18,4 @@ two:
   bed: 1
   bath: 1
   end_date: 2013-11-09
+  user_id: MyString
