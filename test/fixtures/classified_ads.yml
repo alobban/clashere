@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  rent: 1
+  location: MyString
+  description: MyString
+  bed: 1
+  bath: 1
+  end_date: 2013-11-09
+
+two:
+  title: MyString
+  rent: 1
+  location: MyString
+  description: MyString
+  bed: 1
+  bath: 1
+  end_date: 2013-11-09

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @classified_ad.title %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @classified_ad.rent %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @classified_ad.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @classified_ad.description %>
+</p>
+
+<p>
+  <strong>Bed:</strong>
+  <%= @classified_ad.bed %>
+</p>
+
+<p>
+  <strong>Bath:</strong>
+  <%= @classified_ad.bath %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @classified_ad.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_classified_ad_path(@classified_ad) %> |
+<%= link_to 'Back', classified_ads_path %>
