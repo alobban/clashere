@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131109091012) do
+ActiveRecord::Schema.define(version: 20131110010240) do
 
   create_table "classified_ads", force: true do |t|
     t.string   "title"
     t.integer  "rent"
     t.string   "location"
-    t.string   "description"
+    t.text     "description", limit: 255
     t.integer  "bed"
     t.integer  "bath"
     t.date     "end_date"
-    t.string   "user_id"
+    t.integer  "user_id",     limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
